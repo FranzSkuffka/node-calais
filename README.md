@@ -8,11 +8,12 @@ Install using npm:
     $ npm install calais
 
 ## Usage ##
-
-    var calais = new Calais('<YOUR API KEY>')
-    calais.set('content', 'The Federal Reserve is the enemy of Ron Paul.')
+    Calais = require('calais').Calais;
+    var calais = new Calais('<YOUR API KEY>');
+    calais.set('content', 'The Federal Reserve is the enemy of Ron Paul.');
     calais.fetch(function(err, result) {
       // do something with result
+      console.log(result);
     })
 
 ## Example ##
